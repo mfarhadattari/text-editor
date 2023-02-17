@@ -7,20 +7,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Editor</title>
 
-    
+
     <link rel="stylesheet" href="tailwind/daisyUI.css">
     <script src="./tailwind/tailwind.js"></script>
-    <!-- TailWind CSS -->
+    <script src="./font-awesome/kits.js"></script>
 
+
+    <!-- TailWind CSS -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <!-- Font Awesome -->
+    <!-- <script src="https://kit.fontawesome.com/2505059374.js" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
 
+    <header>
+        <h1 class="text-white text-3xl text-center font-bold mt-5">Text Editor</h1>
+    </header>
 
+    <main>
+        <section class="container mx-auto mt-10">
+            <!-- Font Styling -->
+            <div class="mockup-window border border-base-300">
+                
 
+                <div class="flex justify-between items-center w-3/4 mx-auto p-3">
+                    <div class="font-semibold text-white text-xl">
+                        <label class="swap">
+                            <input type="checkbox" />
+                            <div class="swap-on bg-slate-500 px-5 py-2 rounded-xl">
+                                <i class="fa-solid fa-bold"></i>
+                            </div>
+                            <div class="swap-off px-5 py-2">
+                                <i class="fa-solid fa-bold"></i>
+                            </div>
+                        </label>
+                        <label class="swap">
+                            <input type="checkbox" />
+                            <div class="swap-on bg-slate-500 px-5 py-2 rounded-xl">
+                                <i class="fa-solid fa-italic"></i>
+                            </div>
+                            <div class="swap-off  px-5 py-2">
+                                <i class="fa-solid fa-italic"></i>
+                            </div>
+                        </label>
+                        <label class="swap">
+                            <input type="checkbox" />
+                            <div class="swap-on bg-slate-500 px-5 py-2 rounded-xl">
+                                <i class="fa-solid fa-underline"></i>
+                            </div>
+                            <div class="swap-off px-5 py-2 ">
+                                <i class="fa-solid fa-underline"></i>
+                            </div>
+                        </label>
+                    </div>
+    
+                    <div>
+                        <label class="swap">
+                            <input type="checkbox" />
+                            <div class="swap-on bg-slate-500 px-5 py-2 rounded-xl">
+                                <i class="fa-solid fa-align-left"></i>
+                            </div>
+                            <div class="swap-off px-5 py-2">
+                                <i class="fa-solid fa-align-left"></i>
+                            </div>
+                        </label>
+                        <label class="swap">
+                            <input type="checkbox" />
+                            <div class="swap-on bg-slate-500 px-5 py-2 rounded-xl">
+                                <i class="fa-solid fa-align-center"></i>
+                            </div>
+                            <div class="swap-off px-5 py-2">
+                                <i class="fa-solid fa-align-center"></i>
+                            </div>
+                        </label>
+                        <label class="swap">
+                            <input type="checkbox" />
+                            <div class="swap-on bg-slate-500 px-5 py-2 rounded-xl">
+                                <i class="fa-solid fa-align-justify"></i>
+                            </div>
+                            <div class="swap-off px-5 py-2">
+                                <i class="fa-solid fa-align-justify"></i>
+                            </div>
+                        </label>
+                        <label class="swap">
+                            <input type="checkbox" />
+                            <div class="swap-on bg-slate-500 px-5 py-2 rounded-xl">
+                                <i class="fa-solid fa-align-right"></i>
+                            </div>
+                            <div class="swap-off px-5 py-2">
+                                <i class="fa-solid fa-align-right"></i>
+                            </div>
+                        </label>
+                    </div>
 
+                    <div class="flex gap-5">
+                        <input class="w-1/2 px-2" type="number" name="" id="" placeholder="Font Size">
+                        <input class="w-1/2" type="color" name="" id="">
+                    </div>
+                </div>
+
+                <div class="flex justify-center px-4 py-16 border-t border-base-300">
+                    <textarea class="textarea textarea-secondary" name="" id="" cols="100" rows="7" placeholder="Type Something...."></textarea>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+  
     <!-- JS File -->
     <script src="./js/script.js"></script>
 </body>
